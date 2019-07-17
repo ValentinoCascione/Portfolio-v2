@@ -28,7 +28,7 @@ var origOffsetY = 638;
 
 function onScroll(e) {
     if (window.scrollY >= origOffsetY) {
-        page2[0].classList = 'fixed';
+        page2[0].classList += ' fixed ';
     } else {
         page2[0].classList.remove("fixed");
     }
