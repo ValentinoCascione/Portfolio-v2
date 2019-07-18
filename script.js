@@ -7,22 +7,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-
-// $(function(){
-// 	$(window).scroll(
-// 	function () {//Au scroll dans la fenetre on déclenche la fonction
-// 	if ($(this).scrollTop() > 187) { //si on a défini de plus de 187 px du haut vers le bas
-// 	$('#gauche').addClass("fixgauche"); //on ajoute la classe "fixgauche" à <div id="gauche">
-// 	} else {
-// 	$('#gauche').removeClass("fixgauche");//sinon on retire la classe "fixgauche" à <div id="gauche">
-// 						}
-// 					}
-// 				);			 
-// 			});		 
-			
-
-
-
 var page2 = document.getElementsByClassName("first-page2");
 var origOffsetY = 638;
 
@@ -35,3 +19,15 @@ function onScroll(e) {
 }
 
 document.addEventListener('scroll', onScroll);
+
+
+$(function() {
+    $("body").niceScroll({
+        background: "#f7f3f0",
+        cursorcolor: "#0d0900",
+        cursoropacitymin: 1,
+        cursorwidth: "4px",
+        position: "absolute",
+        top: "0px"
+    });
+});
