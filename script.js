@@ -26,8 +26,6 @@ $(function() {
         background: "#f7f3f0",
         cursorcolor: "#0d0900",
         cursoropacitymin: 1,
-        cursorwidth: "4px",
-        position: "absolute",
-        top: "0px"
+        cursorwidth: "4px"
     });
 });
